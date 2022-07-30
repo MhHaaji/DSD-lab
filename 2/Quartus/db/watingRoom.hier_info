@@ -1,9 +1,10 @@
 |watingRoom
 OPEN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 IN => inst7~1.IN0
-IN => inst13.IN0
+IN => inst1.IN0
 IN => lpm_counter0:inst4.updown
 T => inst6.IN0
+T => inst1.IN1
 ENT => inst6.IN1
 presents[0] <= lpm_counter0:inst4.q[0]
 presents[1] <= lpm_counter0:inst4.q[1]

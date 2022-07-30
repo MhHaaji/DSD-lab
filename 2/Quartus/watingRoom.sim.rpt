@@ -1,5 +1,5 @@
 Simulator report for watingRoom
-Sat Jul 30 00:24:16 2022
+Sat Jul 30 14:20:11 2022
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -45,43 +45,43 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 33 nodes     ;
-; Simulation Coverage         ;      91.67 % ;
-; Total Number of Transitions ; 424          ;
+; Simulation Netlist Size     ; 34 nodes     ;
+; Simulation Coverage         ;      97.30 % ;
+; Total Number of Transitions ; 1075         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone III  ;
 +-----------------------------+--------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                          ;
-+--------------------------------------------------------------------------------------------+----------------+---------------+
-; Option                                                                                     ; Setting        ; Default Value ;
-+--------------------------------------------------------------------------------------------+----------------+---------------+
-; Simulation mode                                                                            ; Functional     ; Timing        ;
-; Start time                                                                                 ; 0 ns           ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF           ;               ;
-; Vector input source                                                                        ; watingRoom.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
-; Check outputs                                                                              ; Off            ; Off           ;
-; Report simulation coverage                                                                 ; On             ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
-; Display missing 1-value coverage report                                                    ; On             ; On            ;
-; Display missing 0-value coverage report                                                    ; On             ; On            ;
-; Detect setup and hold time violations                                                      ; Off            ; Off           ;
-; Detect glitches                                                                            ; Off            ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
-; Generate Signal Activity File                                                              ; Off            ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
-; Group bus channels in simulation results                                                   ; Off            ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
-; Interconnect Delay Model Type                                                              ; Transport      ; Transport     ;
-; Cell Delay Model Type                                                                      ; Transport      ; Transport     ;
-+--------------------------------------------------------------------------------------------+----------------+---------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                      ;
++--------------------------------------------------------------------------------------------+----------------------------+---------------+
+; Option                                                                                     ; Setting                    ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------+---------------+
+; Simulation mode                                                                            ; Functional                 ; Timing        ;
+; Start time                                                                                 ; 0 ns                       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                       ;               ;
+; Vector input source                                                                        ; watingRoomCompleteTest.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                         ; On            ;
+; Check outputs                                                                              ; Off                        ; Off           ;
+; Report simulation coverage                                                                 ; On                         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                         ; On            ;
+; Display missing 1-value coverage report                                                    ; On                         ; On            ;
+; Display missing 0-value coverage report                                                    ; On                         ; On            ;
+; Detect setup and hold time violations                                                      ; Off                        ; Off           ;
+; Detect glitches                                                                            ; Off                        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                        ; Off           ;
+; Generate Signal Activity File                                                              ; Off                        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                 ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                  ; Transport     ;
++--------------------------------------------------------------------------------------------+----------------------------+---------------+
 
 
 +----------------------+
@@ -96,13 +96,13 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      91.67 % ;
-; Total nodes checked                                 ; 33           ;
-; Total output ports checked                          ; 36           ;
-; Total output ports with complete 1/0-value coverage ; 33           ;
-; Total output ports with no 1/0-value coverage       ; 2            ;
-; Total output ports with no 1-value coverage         ; 3            ;
-; Total output ports with no 0-value coverage         ; 2            ;
+; Total coverage as a percentage                      ;      97.30 % ;
+; Total nodes checked                                 ; 34           ;
+; Total output ports checked                          ; 37           ;
+; Total output ports with complete 1/0-value coverage ; 36           ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 1            ;
 +-----------------------------------------------------+--------------+
 
 
@@ -118,7 +118,9 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |watingRoom|inst7~2                                                                                            ; |watingRoom|inst7~2                                                                                              ; out0             ;
 ; |watingRoom|IN                                                                                                 ; |watingRoom|IN                                                                                                   ; out              ;
 ; |watingRoom|inst6                                                                                              ; |watingRoom|inst6                                                                                                ; out0             ;
+; |watingRoom|T                                                                                                  ; |watingRoom|T                                                                                                    ; out              ;
 ; |watingRoom|ENT                                                                                                ; |watingRoom|ENT                                                                                                  ; out              ;
+; |watingRoom|inst                                                                                               ; |watingRoom|inst                                                                                                 ; out0             ;
 ; |watingRoom|presents[3]                                                                                        ; |watingRoom|presents[3]                                                                                          ; pin_out          ;
 ; |watingRoom|presents[2]                                                                                        ; |watingRoom|presents[2]                                                                                          ; pin_out          ;
 ; |watingRoom|presents[1]                                                                                        ; |watingRoom|presents[1]                                                                                          ; pin_out          ;
@@ -126,6 +128,7 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |watingRoom|CLR                                                                                                ; |watingRoom|CLR                                                                                                  ; out              ;
 ; |watingRoom|CLK                                                                                                ; |watingRoom|CLK                                                                                                  ; out              ;
 ; |watingRoom|inst13                                                                                             ; |watingRoom|inst13                                                                                               ; out0             ;
+; |watingRoom|inst1                                                                                              ; |watingRoom|inst1                                                                                                ; out0             ;
 ; |watingRoom|OUT                                                                                                ; |watingRoom|OUT                                                                                                  ; out              ;
 ; |watingRoom|CLOSE                                                                                              ; |watingRoom|CLOSE                                                                                                ; pin_out          ;
 ; |watingRoom|inst11                                                                                             ; |watingRoom|inst11                                                                                               ; out0             ;
@@ -155,8 +158,6 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; Node Name           ; Output Port Name    ; Output Port Type ;
 +---------------------+---------------------+------------------+
 ; |watingRoom|inst7~1 ; |watingRoom|inst7~1 ; out0             ;
-; |watingRoom|T       ; |watingRoom|T       ; out              ;
-; |watingRoom|inst    ; |watingRoom|inst    ; out0             ;
 +---------------------+---------------------+------------------+
 
 
@@ -167,7 +168,6 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; Node Name           ; Output Port Name    ; Output Port Type ;
 +---------------------+---------------------+------------------+
 ; |watingRoom|inst7~1 ; |watingRoom|inst7~1 ; out0             ;
-; |watingRoom|inst    ; |watingRoom|inst    ; out0             ;
 +---------------------+---------------------+------------------+
 
 
@@ -184,18 +184,23 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Sat Jul 30 00:24:16 2022
+    Info: Processing started: Sat Jul 30 14:20:10 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off watingRoom -c watingRoom
-Info: Using vector source file "E:/DSD-lab/2/Quartus/watingRoom.vwf"
+Info: Using vector source file "E:/DSD-lab/2/Quartus/watingRoomCompleteTest.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|inst7"
+Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[3]"
+Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[2]"
+Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[1]"
+Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[0]"
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      91.67 %
-Info: Number of transitions in simulation is 424
-Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+Info: Simulation coverage is      97.30 %
+Info: Number of transitions in simulation is 1075
+Info: Quartus II Simulator was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 155 megabytes
-    Info: Processing ended: Sat Jul 30 00:24:16 2022
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sat Jul 30 14:20:11 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for watingRoom
-Sat Jul 30 00:26:32 2022
+Sat Jul 30 14:13:01 2022
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -199,8 +199,8 @@ No paths to report.
 ; CLR       ; CLK        ; 2.275 ; 2.696 ; Rise       ; CLK             ;
 ; ENT       ; CLK        ; 2.088 ; 2.551 ; Rise       ; CLK             ;
 ; IN        ; CLK        ; 2.155 ; 2.619 ; Rise       ; CLK             ;
-; OUT       ; CLK        ; 2.763 ; 3.206 ; Rise       ; CLK             ;
-; T         ; CLK        ; 2.186 ; 2.640 ; Rise       ; CLK             ;
+; OUT       ; CLK        ; 2.763 ; 3.207 ; Rise       ; CLK             ;
+; T         ; CLK        ; 2.723 ; 3.167 ; Rise       ; CLK             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -213,7 +213,7 @@ No paths to report.
 ; ENT       ; CLK        ; -1.666 ; -2.092 ; Rise       ; CLK             ;
 ; IN        ; CLK        ; -1.115 ; -1.513 ; Rise       ; CLK             ;
 ; OUT       ; CLK        ; -2.458 ; -2.899 ; Rise       ; CLK             ;
-; T         ; CLK        ; -1.801 ; -2.235 ; Rise       ; CLK             ;
+; T         ; CLK        ; -1.810 ; -2.247 ; Rise       ; CLK             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -337,8 +337,8 @@ No paths to report.
 ; CLR       ; CLK        ; 1.954 ; 2.315 ; Rise       ; CLK             ;
 ; ENT       ; CLK        ; 1.794 ; 2.166 ; Rise       ; CLK             ;
 ; IN        ; CLK        ; 1.824 ; 2.227 ; Rise       ; CLK             ;
-; OUT       ; CLK        ; 2.421 ; 2.765 ; Rise       ; CLK             ;
-; T         ; CLK        ; 1.890 ; 2.268 ; Rise       ; CLK             ;
+; OUT       ; CLK        ; 2.421 ; 2.766 ; Rise       ; CLK             ;
+; T         ; CLK        ; 2.370 ; 2.750 ; Rise       ; CLK             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -351,7 +351,7 @@ No paths to report.
 ; ENT       ; CLK        ; -1.419 ; -1.767 ; Rise       ; CLK             ;
 ; IN        ; CLK        ; -0.913 ; -1.259 ; Rise       ; CLK             ;
 ; OUT       ; CLK        ; -2.153 ; -2.496 ; Rise       ; CLK             ;
-; T         ; CLK        ; -1.550 ; -1.915 ; Rise       ; CLK             ;
+; T         ; CLK        ; -1.557 ; -1.925 ; Rise       ; CLK             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -466,7 +466,7 @@ No paths to report.
 ; ENT       ; CLK        ; 1.167 ; 1.763 ; Rise       ; CLK             ;
 ; IN        ; CLK        ; 1.207 ; 1.784 ; Rise       ; CLK             ;
 ; OUT       ; CLK        ; 1.538 ; 2.145 ; Rise       ; CLK             ;
-; T         ; CLK        ; 1.219 ; 1.843 ; Rise       ; CLK             ;
+; T         ; CLK        ; 1.526 ; 2.136 ; Rise       ; CLK             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -479,7 +479,7 @@ No paths to report.
 ; ENT       ; CLK        ; -0.929 ; -1.501 ; Rise       ; CLK             ;
 ; IN        ; CLK        ; -0.624 ; -1.162 ; Rise       ; CLK             ;
 ; OUT       ; CLK        ; -1.372 ; -1.960 ; Rise       ; CLK             ;
-; T         ; CLK        ; -1.006 ; -1.614 ; Rise       ; CLK             ;
+; T         ; CLK        ; -1.012 ; -1.622 ; Rise       ; CLK             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -533,8 +533,8 @@ No paths to report.
 ; CLR       ; CLK        ; 2.275 ; 2.696 ; Rise       ; CLK             ;
 ; ENT       ; CLK        ; 2.088 ; 2.551 ; Rise       ; CLK             ;
 ; IN        ; CLK        ; 2.155 ; 2.619 ; Rise       ; CLK             ;
-; OUT       ; CLK        ; 2.763 ; 3.206 ; Rise       ; CLK             ;
-; T         ; CLK        ; 2.186 ; 2.640 ; Rise       ; CLK             ;
+; OUT       ; CLK        ; 2.763 ; 3.207 ; Rise       ; CLK             ;
+; T         ; CLK        ; 2.723 ; 3.167 ; Rise       ; CLK             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -547,7 +547,7 @@ No paths to report.
 ; ENT       ; CLK        ; -0.929 ; -1.501 ; Rise       ; CLK             ;
 ; IN        ; CLK        ; -0.624 ; -1.162 ; Rise       ; CLK             ;
 ; OUT       ; CLK        ; -1.372 ; -1.960 ; Rise       ; CLK             ;
-; T         ; CLK        ; -1.006 ; -1.614 ; Rise       ; CLK             ;
+; T         ; CLK        ; -1.012 ; -1.622 ; Rise       ; CLK             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -686,7 +686,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design.
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 5     ; 5    ;
-; Unconstrained Input Port Paths  ; 15    ; 15   ;
+; Unconstrained Input Port Paths  ; 19    ; 19   ;
 ; Unconstrained Output Ports      ; 6     ; 6    ;
 ; Unconstrained Output Port Paths ; 9     ; 9    ;
 +---------------------------------+-------+------+
@@ -698,7 +698,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design.
 Info: *******************************************************************
 Info: Running Quartus II TimeQuest Timing Analyzer
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Sat Jul 30 00:26:31 2022
+    Info: Processing started: Sat Jul 30 14:13:00 2022
 Info: Command: quartus_sta watingRoom -c watingRoom
 Info: qsta_default_script.tcl version: #3
 Info: high junction temperature operating condition is not set. Assuming a default value of '85'.
@@ -766,7 +766,7 @@ Info: Design is not fully constrained for setup requirements
 Info: Design is not fully constrained for hold requirements
 Info: Quartus II TimeQuest Timing Analyzer was successful. 0 errors, 13 warnings
     Info: Peak virtual memory: 246 megabytes
-    Info: Processing ended: Sat Jul 30 00:26:32 2022
+    Info: Processing ended: Sat Jul 30 14:13:01 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

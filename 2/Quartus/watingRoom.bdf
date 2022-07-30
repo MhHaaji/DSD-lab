@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 80 -112 248 -96)
+	(rect 192 -120 360 -104)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "CLR" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
@@ -521,17 +521,41 @@ applicable agreement for further details.
 		(arc (pt 8 36)(pt 8 12)(rect -21 7 14 42)(line_width 1))
 	)
 )
+(symbol
+	(rect 352 144 416 192)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 37 26 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12)(line_width 1))
+		(line (pt 14 37)(pt 31 37)(line_width 1))
+		(line (pt 14 12)(pt 14 37)(line_width 1))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
+	)
+)
 (connector
 	(pt 536 -112)
 	(pt 464 -112)
-)
-(connector
-	(pt 248 -104)
-	(pt 416 -104)
-)
-(connector
-	(pt 416 -104)
-	(pt 416 -112)
 )
 (connector
 	(text "presents[3..0]" (rect 690 -80 758 -68)(font "Arial" ))
@@ -689,7 +713,24 @@ applicable agreement for further details.
 	(pt 384 216)
 )
 (connector
-	(text "IN" (rect 426 184 437 196)(font "Arial" ))
+	(pt 416 -112)
+	(pt 360 -112)
+)
+(connector
 	(pt 480 200)
 	(pt 416 200)
+)
+(connector
+	(pt 416 200)
+	(pt 416 168)
+)
+(connector
+	(text "IN" (rect 306 144 317 156)(font "Arial" ))
+	(pt 352 160)
+	(pt 296 160)
+)
+(connector
+	(text "T" (rect 314 168 319 180)(font "Arial" ))
+	(pt 352 176)
+	(pt 328 176)
 )

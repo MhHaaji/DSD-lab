@@ -334,9 +334,9 @@ Chip Device Options:
 	Atom Type: cycloneiii_lcell_comb
 
 	INPUTS (Driven By):
-		0: NO ITERM
+		0: [DATAA]	  OUT~input	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		1: [DATAB]	  IN~input	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
-		2: [DATAC]	  OUT~input	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		2: [DATAC]	  T~input	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		3: [DATAD]	  CLR~input	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		4: NO ITERM
 	OUTPUTS (Int. Connections):
@@ -345,7 +345,7 @@ Chip Device Options:
 
 	PARAMETER LIST:
 		sum_lutc_input                 = datac
-		lut_mask                       = 3cff
+		lut_mask                       = 6aff
 
 
 - ATOM ------------------------
@@ -643,7 +643,7 @@ Chip Device Options:
 		0: [I]	  T	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 	OUTPUTS (Int. Connections):
-		0: [O]	T~input	LIT INDEX 0 FANOUTS 1
+		0: [O]	T~input	LIT INDEX 0 FANOUTS 2
 
 	PARAMETER LIST:
 		bus_hold                       = false
