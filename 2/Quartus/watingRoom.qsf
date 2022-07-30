@@ -56,4 +56,6 @@ set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name VECTOR_WAVEFORM_FILE watingRoom.vwf
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name VECTOR_WAVEFORM_FILE watingRoomCompleteTest.vwf
+set_global_assignment -name BDF_FILE UDCounter.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE waitingRoom2.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE watingRoomCompleteTest.vwf

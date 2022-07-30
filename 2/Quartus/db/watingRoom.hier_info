@@ -2,85 +2,39 @@
 OPEN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 IN => inst7~1.IN0
 IN => inst1.IN0
-IN => lpm_counter0:inst4.updown
+IN => UDCounter:inst2.U
 T => inst6.IN0
 T => inst1.IN1
 ENT => inst6.IN1
-presents[0] <= lpm_counter0:inst4.q[0]
-presents[1] <= lpm_counter0:inst4.q[1]
-presents[2] <= lpm_counter0:inst4.q[2]
-presents[3] <= lpm_counter0:inst4.q[3]
-CLR => inst5.IN0
-CLK => lpm_counter0:inst4.clock
-CLK => inst7.CLK
+presents[0] <= UDCounter:inst2.Q[0]
+presents[1] <= UDCounter:inst2.Q[1]
+presents[2] <= UDCounter:inst2.Q[2]
+presents[3] <= UDCounter:inst2.Q[3]
 OUT => inst13.IN1
+CLR => UDCounter:inst2.CLR
+CLK => UDCounter:inst2.CLK
+CLK => inst7.CLK
 CLOSE <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|watingRoom|lpm_counter0:inst4
-clock => lpm_counter:lpm_counter_component.clock
-cnt_en => lpm_counter:lpm_counter_component.cnt_en
-sclr => lpm_counter:lpm_counter_component.sclr
-updown => lpm_counter:lpm_counter_component.updown
-q[0] <= lpm_counter:lpm_counter_component.q[0]
-q[1] <= lpm_counter:lpm_counter_component.q[1]
-q[2] <= lpm_counter:lpm_counter_component.q[2]
-q[3] <= lpm_counter:lpm_counter_component.q[3]
-
-
-|watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component
-clock => cntr_nih:auto_generated.clock
-clk_en => ~NO_FANOUT~
-cnt_en => cntr_nih:auto_generated.cnt_en
-updown => cntr_nih:auto_generated.updown
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => cntr_nih:auto_generated.sclr
-sset => ~NO_FANOUT~
-sconst => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-data[0] => ~NO_FANOUT~
-data[1] => ~NO_FANOUT~
-data[2] => ~NO_FANOUT~
-data[3] => ~NO_FANOUT~
-cin => ~NO_FANOUT~
-q[0] <= cntr_nih:auto_generated.q[0]
-q[1] <= cntr_nih:auto_generated.q[1]
-q[2] <= cntr_nih:auto_generated.q[2]
-q[3] <= cntr_nih:auto_generated.q[3]
-cout <= <GND>
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
-
-
-|watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated
-clock => counter_reg_bit[3].CLK
-clock => counter_reg_bit[2].CLK
-clock => counter_reg_bit[1].CLK
-clock => counter_reg_bit[0].CLK
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= counter_reg_bit[3].DB_MAX_OUTPUT_PORT_TYPE
-updown => counter_comb_bita0.DATAB
-updown => counter_comb_bita1.DATAB
-updown => counter_comb_bita2.DATAB
-updown => counter_comb_bita3.DATAB
+|watingRoom|UDCounter:inst2
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst7.ACLR
+CLR => inst6.ACLR
+CLR => inst5.ACLR
+Enable => inst~0.IN0
+Enable => inst24.IN1
+Enable => inst18.IN1
+Enable => inst14.IN1
+CLK => inst.CLK
+CLK => inst7.CLK
+CLK => inst6.CLK
+CLK => inst5.CLK
+U => inst21.IN1
+U => inst13.IN0
 
 

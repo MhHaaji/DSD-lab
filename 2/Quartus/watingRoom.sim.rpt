@@ -1,5 +1,5 @@
 Simulator report for watingRoom
-Sat Jul 30 14:20:11 2022
+Sat Jul 30 21:13:46 2022
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 34 nodes     ;
-; Simulation Coverage         ;      97.30 % ;
-; Total Number of Transitions ; 1075         ;
+; Simulation Netlist Size     ; 41 nodes     ;
+; Simulation Coverage         ;      97.56 % ;
+; Total Number of Transitions ; 1005         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone III  ;
 +-----------------------------+--------------+
@@ -96,10 +96,10 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      97.30 % ;
-; Total nodes checked                                 ; 34           ;
-; Total output ports checked                          ; 37           ;
-; Total output ports with complete 1/0-value coverage ; 36           ;
+; Total coverage as a percentage                      ;      97.56 % ;
+; Total nodes checked                                 ; 41           ;
+; Total output ports checked                          ; 41           ;
+; Total output ports with complete 1/0-value coverage ; 40           ;
 ; Total output ports with no 1/0-value coverage       ; 1            ;
 ; Total output ports with no 1-value coverage         ; 1            ;
 ; Total output ports with no 0-value coverage         ; 1            ;
@@ -107,48 +107,52 @@ Please use Quartus II to view the waveform report data.
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                                                                                                                          ;
-+----------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                                      ; Output Port Name                                                                                                 ; Output Port Type ;
-+----------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
-; |watingRoom|OPEN                                                                                               ; |watingRoom|OPEN                                                                                                 ; pin_out          ;
-; |watingRoom|inst7                                                                                              ; |watingRoom|inst7                                                                                                ; regout           ;
-; |watingRoom|inst7~0                                                                                            ; |watingRoom|inst7~0                                                                                              ; out0             ;
-; |watingRoom|inst7~2                                                                                            ; |watingRoom|inst7~2                                                                                              ; out0             ;
-; |watingRoom|IN                                                                                                 ; |watingRoom|IN                                                                                                   ; out              ;
-; |watingRoom|inst6                                                                                              ; |watingRoom|inst6                                                                                                ; out0             ;
-; |watingRoom|T                                                                                                  ; |watingRoom|T                                                                                                    ; out              ;
-; |watingRoom|ENT                                                                                                ; |watingRoom|ENT                                                                                                  ; out              ;
-; |watingRoom|inst                                                                                               ; |watingRoom|inst                                                                                                 ; out0             ;
-; |watingRoom|presents[3]                                                                                        ; |watingRoom|presents[3]                                                                                          ; pin_out          ;
-; |watingRoom|presents[2]                                                                                        ; |watingRoom|presents[2]                                                                                          ; pin_out          ;
-; |watingRoom|presents[1]                                                                                        ; |watingRoom|presents[1]                                                                                          ; pin_out          ;
-; |watingRoom|presents[0]                                                                                        ; |watingRoom|presents[0]                                                                                          ; pin_out          ;
-; |watingRoom|CLR                                                                                                ; |watingRoom|CLR                                                                                                  ; out              ;
-; |watingRoom|CLK                                                                                                ; |watingRoom|CLK                                                                                                  ; out              ;
-; |watingRoom|inst13                                                                                             ; |watingRoom|inst13                                                                                               ; out0             ;
-; |watingRoom|inst1                                                                                              ; |watingRoom|inst1                                                                                                ; out0             ;
-; |watingRoom|OUT                                                                                                ; |watingRoom|OUT                                                                                                  ; out              ;
-; |watingRoom|CLOSE                                                                                              ; |watingRoom|CLOSE                                                                                                ; pin_out          ;
-; |watingRoom|inst11                                                                                             ; |watingRoom|inst11                                                                                               ; out0             ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|_~16                  ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|_~16                    ; out0             ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita0    ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita0      ; combout          ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita0    ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita0~COUT ; cout             ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita1    ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita1      ; combout          ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita1    ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita1~COUT ; cout             ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita2    ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita2      ; combout          ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita2    ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita2~COUT ; cout             ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita3    ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_comb_bita3      ; combout          ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[3]    ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[3]      ; regout           ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[2]    ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[2]      ; regout           ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[1]    ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[1]      ; regout           ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[0]    ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[0]      ; regout           ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[3]~7  ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[3]~7    ; out              ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[2]~8  ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[2]~8    ; out              ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[1]~9  ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[1]~9    ; out              ;
-; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[0]~10 ; |watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[0]~10   ; out              ;
-+----------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
++----------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                  ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |watingRoom|OPEN                    ; |watingRoom|OPEN                    ; pin_out          ;
+; |watingRoom|inst7                   ; |watingRoom|inst7                   ; regout           ;
+; |watingRoom|inst7~0                 ; |watingRoom|inst7~0                 ; out0             ;
+; |watingRoom|inst7~2                 ; |watingRoom|inst7~2                 ; out0             ;
+; |watingRoom|IN                      ; |watingRoom|IN                      ; out              ;
+; |watingRoom|inst6                   ; |watingRoom|inst6                   ; out0             ;
+; |watingRoom|T                       ; |watingRoom|T                       ; out              ;
+; |watingRoom|ENT                     ; |watingRoom|ENT                     ; out              ;
+; |watingRoom|inst                    ; |watingRoom|inst                    ; out0             ;
+; |watingRoom|presents[3]             ; |watingRoom|presents[3]             ; pin_out          ;
+; |watingRoom|presents[2]             ; |watingRoom|presents[2]             ; pin_out          ;
+; |watingRoom|presents[1]             ; |watingRoom|presents[1]             ; pin_out          ;
+; |watingRoom|presents[0]             ; |watingRoom|presents[0]             ; pin_out          ;
+; |watingRoom|inst13                  ; |watingRoom|inst13                  ; out0             ;
+; |watingRoom|inst1                   ; |watingRoom|inst1                   ; out0             ;
+; |watingRoom|OUT                     ; |watingRoom|OUT                     ; out              ;
+; |watingRoom|CLR                     ; |watingRoom|CLR                     ; out              ;
+; |watingRoom|CLK                     ; |watingRoom|CLK                     ; out              ;
+; |watingRoom|CLOSE                   ; |watingRoom|CLOSE                   ; pin_out          ;
+; |watingRoom|inst11                  ; |watingRoom|inst11                  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst    ; |watingRoom|UDCounter:inst2|inst    ; regout           ;
+; |watingRoom|UDCounter:inst2|inst~0  ; |watingRoom|UDCounter:inst2|inst~0  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst7   ; |watingRoom|UDCounter:inst2|inst7   ; regout           ;
+; |watingRoom|UDCounter:inst2|inst7~0 ; |watingRoom|UDCounter:inst2|inst7~0 ; out0             ;
+; |watingRoom|UDCounter:inst2|inst24  ; |watingRoom|UDCounter:inst2|inst24  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst25  ; |watingRoom|UDCounter:inst2|inst25  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst27  ; |watingRoom|UDCounter:inst2|inst27  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst22  ; |watingRoom|UDCounter:inst2|inst22  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst21  ; |watingRoom|UDCounter:inst2|inst21  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst23  ; |watingRoom|UDCounter:inst2|inst23  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst17  ; |watingRoom|UDCounter:inst2|inst17  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst13  ; |watingRoom|UDCounter:inst2|inst13  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst6   ; |watingRoom|UDCounter:inst2|inst6   ; regout           ;
+; |watingRoom|UDCounter:inst2|inst6~0 ; |watingRoom|UDCounter:inst2|inst6~0 ; out0             ;
+; |watingRoom|UDCounter:inst2|inst18  ; |watingRoom|UDCounter:inst2|inst18  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst20  ; |watingRoom|UDCounter:inst2|inst20  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst5   ; |watingRoom|UDCounter:inst2|inst5   ; regout           ;
+; |watingRoom|UDCounter:inst2|inst5~0 ; |watingRoom|UDCounter:inst2|inst5~0 ; out0             ;
+; |watingRoom|UDCounter:inst2|inst14  ; |watingRoom|UDCounter:inst2|inst14  ; out0             ;
+; |watingRoom|UDCounter:inst2|inst16  ; |watingRoom|UDCounter:inst2|inst16  ; out0             ;
++-------------------------------------+-------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -184,23 +188,23 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Sat Jul 30 14:20:10 2022
+    Info: Processing started: Sat Jul 30 21:13:46 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off watingRoom -c watingRoom
 Info: Using vector source file "E:/DSD-lab/2/Quartus/watingRoomCompleteTest.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|inst7"
-Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[3]"
-Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[2]"
-Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[1]"
-Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated|counter_reg_bit[0]"
+Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|UDCounter:inst2|inst"
+Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|watingRoom|UDCounter:inst2|inst7"
+Warning: Found clock-sensitive change during active clock edge at time 190.0 ns on register "|watingRoom|UDCounter:inst2|inst6"
+Warning: Found clock-sensitive change during active clock edge at time 190.0 ns on register "|watingRoom|UDCounter:inst2|inst5"
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      97.30 %
-Info: Number of transitions in simulation is 1075
+Info: Simulation coverage is      97.56 %
+Info: Number of transitions in simulation is 1005
 Info: Quartus II Simulator was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 155 megabytes
-    Info: Processing ended: Sat Jul 30 14:20:11 2022
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sat Jul 30 21:13:46 2022
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -58,9 +58,6 @@ clock
 c:|altera|90|quartus|libraries|megafunctions|lpm_counter.inc
 7f888b135ddf66f0653c44cb18ac5
 }
-# hierarchies {
-lpm_counter0:inst4
-}
 # macro_sequence
 
 # end
@@ -200,9 +197,6 @@ c:|altera|90|quartus|libraries|megafunctions|alt_counter_stratix.inc
 c:|altera|90|quartus|libraries|megafunctions|alt_counter_f10ke.inc
 536f8da8218b4a93689416f9baea1880
 }
-# hierarchies {
-lpm_counter0:inst4|lpm_counter:lpm_counter_component
-}
 # macro_sequence
 
 # end
@@ -242,8 +236,25 @@ clock
 -1
 3
 }
+# macro_sequence
+
+# end
+# entity
+UDCounter
+# storage
+db|watingRoom.(4).cnf
+db|watingRoom.(4).cnf
+# case_insensitive
+# source_file
+UDCounter.bdf
+76b14e4dcea7122b37bfb1bda688ba7b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_nih:auto_generated
+UDCounter:inst2
 }
 # macro_sequence
 
@@ -256,7 +267,7 @@ db|watingRoom.(0).cnf
 # case_insensitive
 # source_file
 watingRoom.bdf
-8a75d58dabb011e676816603e328d42
+5477daf6dec9b3afce13a63d421c6ad8
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
