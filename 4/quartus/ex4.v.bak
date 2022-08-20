@@ -1,0 +1,34 @@
+module  stack(
+input clk,
+input rst,
+input [3:0] data_in,
+input push,
+input pop,
+output reg [3:0] data_out,
+output reg full,
+output reg empty);
+
+reg [3:0] mem [7:0];
+reg [3:0] a = 0;
+
+always@(posedge clk or negedge rst) begin
+	if(~rst)begin
+		a <= 0;
+		empty <= 1;
+		full <= 0;
+	end
+	else if(push & ~full)begin
+		if(a == 7) full <= 1;
+		mem[a] <= data_in;
+		a <= a + 1;
+		empty <= 0;
+	end
+	else if(pop & ~empty)begin
+		if(a == 1) empty <= 1;
+		data_out <= mem[a-1];
+		a <= a - 1;
+		full <= 0;
+	end
+
+end
+endmodule
