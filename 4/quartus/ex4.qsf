@@ -52,3 +52,4 @@ set_global_assignment -name VERILOG_FILE stack.v
 set_global_assignment -name VERILOG_FILE ex4.v
 set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
 set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name VECTOR_WAVEFORM_FILE ex4.vwf
