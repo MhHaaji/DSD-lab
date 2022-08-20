@@ -1,5 +1,5 @@
 Analysis & Synthesis report for watingRoom
-Sat Jul 30 21:11:43 2022
+Sat Jul 30 22:46:59 2022
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -9,11 +9,7 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
   1. Legal Notice
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
-  4. Analysis & Synthesis Source Files Read
-  5. Analysis & Synthesis Resource Usage Summary
-  6. Analysis & Synthesis Resource Utilization by Entity
-  7. General Register Statistics
-  8. Analysis & Synthesis Messages
+  4. Analysis & Synthesis Messages
 
 
 
@@ -39,20 +35,20 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jul 30 21:11:43 2022   ;
+; Analysis & Synthesis Status        ; Failed - Sat Jul 30 22:46:59 2022       ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                      ; watingRoom                              ;
 ; Top-level Entity Name              ; watingRoom                              ;
 ; Family                             ; Cyclone III                             ;
-; Total logic elements               ; 11                                      ;
-;     Total combinational functions  ; 11                                      ;
-;     Dedicated logic registers      ; 5                                       ;
-; Total registers                    ; 5                                       ;
-; Total pins                         ; 12                                      ;
-; Total virtual pins                 ; 0                                       ;
-; Total memory bits                  ; 0                                       ;
-; Embedded Multiplier 9-bit elements ; 0                                       ;
-; Total PLLs                         ; 0                                       ;
+; Total logic elements               ; N/A until Partition Merge               ;
+;     Total combinational functions  ; N/A until Partition Merge               ;
+;     Dedicated logic registers      ; N/A until Partition Merge               ;
+; Total registers                    ; N/A until Partition Merge               ;
+; Total pins                         ; N/A until Partition Merge               ;
+; Total virtual pins                 ; N/A until Partition Merge               ;
+; Total memory bits                  ; N/A until Partition Merge               ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge               ;
+; Total PLLs                         ; N/A until Partition Merge               ;
 +------------------------------------+-----------------------------------------+
 
 
@@ -132,78 +128,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path        ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------+
-; watingRoom.bdf                   ; yes             ; User Block Diagram/Schematic File  ; E:/DSD-lab/2/Quartus/watingRoom.bdf ;
-; UDCounter.bdf                    ; yes             ; User Block Diagram/Schematic File  ; E:/DSD-lab/2/Quartus/UDCounter.bdf  ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------+
-
-
-+--------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                        ;
-+---------------------------------------------+----------------------+
-; Resource                                    ; Usage                ;
-+---------------------------------------------+----------------------+
-; Estimated Total logic elements              ; 11                   ;
-;                                             ;                      ;
-; Total combinational functions               ; 11                   ;
-; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 6                    ;
-;     -- 3 input functions                    ; 4                    ;
-;     -- <=2 input functions                  ; 1                    ;
-;                                             ;                      ;
-; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 11                   ;
-;     -- arithmetic mode                      ; 0                    ;
-;                                             ;                      ;
-; Total registers                             ; 5                    ;
-;     -- Dedicated logic registers            ; 5                    ;
-;     -- I/O registers                        ; 0                    ;
-;                                             ;                      ;
-; I/O pins                                    ; 12                   ;
-; Maximum fan-out node                        ; UDCounter:inst2|inst ;
-; Maximum fan-out                             ; 7                    ;
-; Total fan-out                               ; 70                   ;
-; Average fan-out                             ; 1.75                 ;
-+---------------------------------------------+----------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                 ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
-; |watingRoom                ; 11 (5)            ; 5 (1)        ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |watingRoom                 ; work         ;
-;    |UDCounter:inst2|       ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |watingRoom|UDCounter:inst2 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 5     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Sat Jul 30 21:11:42 2022
+    Info: Processing started: Sat Jul 30 22:46:59 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off watingRoom -c watingRoom
 Info: Found 1 design units, including 1 entities, in source file lpm_counter0.tdf
     Info: Found entity 1: lpm_counter0
@@ -211,16 +142,18 @@ Info: Found 1 design units, including 1 entities, in source file watingRoom.bdf
     Info: Found entity 1: watingRoom
 Info: Found 1 design units, including 1 entities, in source file UDCounter.bdf
     Info: Found entity 1: UDCounter
+Warning: Entity "TFF" will be ignored because it conflicts with Quartus II primitive name
+Info: Found 1 design units, including 1 entities, in source file TFF.bdf
+Warning: Entity "SRFF" will be ignored because it conflicts with Quartus II primitive name
+Info: Found 1 design units, including 1 entities, in source file SRFF.bdf
 Info: Elaborating entity "watingRoom" for the top level hierarchy
 Info: Elaborating entity "UDCounter" for hierarchy "UDCounter:inst2"
-Info: Implemented 23 device resources after synthesis - the final resource count might be different
-    Info: Implemented 6 input pins
-    Info: Implemented 6 output pins
-    Info: Implemented 11 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 231 megabytes
-    Info: Processing ended: Sat Jul 30 21:11:43 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+Error: Port "CLR" does not exist in primitive "TFF" of instance "inst8"
+Error: Can't elaborate user hierarchy "UDCounter:inst2"
+Error: Quartus II Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
+    Error: Peak virtual memory: 223 megabytes
+    Error: Processing ended: Sat Jul 30 22:46:59 2022
+    Error: Elapsed time: 00:00:00
+    Error: Total CPU time (on all processors): 00:00:00
 
 

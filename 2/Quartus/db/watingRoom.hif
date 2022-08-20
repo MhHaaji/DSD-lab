@@ -240,26 +240,6 @@ clock
 
 # end
 # entity
-UDCounter
-# storage
-db|watingRoom.(4).cnf
-db|watingRoom.(4).cnf
-# case_insensitive
-# source_file
-UDCounter.bdf
-76b14e4dcea7122b37bfb1bda688ba7b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-UDCounter:inst2
-}
-# macro_sequence
-
-# end
-# entity
 watingRoom
 # storage
 db|watingRoom.(0).cnf

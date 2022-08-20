@@ -876,7 +876,6 @@ applicable agreement for further details.
 	(pt 528 344)
 )
 (connector
-	(text "<<__$DEF_ALIAS454>>" (rect 474 328 592 340)(font "Arial" )(invisible))
 	(pt 528 344)
 	(pt 568 344)
 )
