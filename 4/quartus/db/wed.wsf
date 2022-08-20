@@ -20,13 +20,13 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
-VECTOR("E:/DSD-lab/4/quartus/ex4.vwf")
+VECTOR("E:/DSD-lab/4/quartus/db/ex4.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 160772;
+		ZEND = 321544;
 		NUMERATOR = 772;
-		DENOMINATOR = 160772;
+		DENOMINATOR = 321544;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -167,13 +167,13 @@ VECTOR("E:/DSD-lab/4/quartus/ex4.vwf")
 	}
 }
 
-VECTOR("E:/DSD-lab/4/quartus/db/ex4.sim.cvwf")
+VECTOR("E:/DSD-lab/4/quartus/ex4.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 160772;
-		NUMERATOR = 772;
-		DENOMINATOR = 160772;
+		ZEND = 242500;
+		NUMERATOR = 960;
+		DENOMINATOR = 242500;
 		TOP_INDEX = 0;
 	}
 	CLOCK{

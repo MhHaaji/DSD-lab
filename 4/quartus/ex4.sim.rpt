@@ -1,5 +1,5 @@
 Simulator report for ex4
-Sun Aug 21 00:16:26 2022
+Sun Aug 21 00:37:55 2022
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -289,7 +289,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Sun Aug 21 00:16:26 2022
+    Info: Processing started: Sun Aug 21 00:37:54 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ex4 -c ex4
 Info: Using vector source file "E:/DSD-lab/4/quartus/ex4.vwf"
 Info: Inverted registers were found during simulation
@@ -301,8 +301,8 @@ Info: Simulation coverage is      76.38 %
 Info: Number of transitions in simulation is 1963
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 164 megabytes
-    Info: Processing ended: Sun Aug 21 00:16:26 2022
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sun Aug 21 00:37:55 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
